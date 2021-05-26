@@ -1,0 +1,47 @@
+@mixin shadowText {
+  text-shadow: 1px 1px 3px blue;
+}
+#container {
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+  text-align: center;
+  margin: 0 auto;
+  background-color: lightblue;
+  h1 {
+    font-size: 36px;
+    @include shadowText;
+    color: white;
+  }
+  P {
+    font-size: 24px;
+  }
+  a {
+    @extend #importantStuff;
+    font-size: 24px;
+    text-decoration: none;
+  }
+  a:hover {
+    text-shadow: 1px 1px 2px red;
+  }
+}
+#mainLogo {
+  width: 100%;
+}
+footer {
+  @extend #container;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  #socialLinks img {
+    width: 50px;
+  }
+  p {
+    font-size: 14px;
+  }
+}
+#importantStuff {
+  color: white;
+  @include shadowText;
+}
