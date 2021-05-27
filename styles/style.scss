@@ -19,7 +19,7 @@
     font-size: 24px;
   }
   a {
-    @extend #importantStuff;
+    @extend #importantInfo;
     font-size: 24px;
     text-decoration: none;
   }
@@ -41,7 +41,7 @@ footer {
     font-size: 14px;
   }
 }
-#importantStuff {
+#importantInfo {
   color: white;
   @include shadowText;
 }

@@ -52,7 +52,7 @@ footer p {
   font-size: 14px;
 }
 
-#importantStuff, #container a, footer a {
+#importantInfo, #container a, footer a {
   color: white;
   text-shadow: 1px 1px 3px blue;
 }
